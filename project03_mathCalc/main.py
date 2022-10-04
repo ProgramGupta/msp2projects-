@@ -2,7 +2,7 @@ import math
 #Pick the Equation
 what_equation_to_pick = int(
     input(
-        f'What equation do you want to solve for: 1 = Newton second law, 2 = Pythagorean theorem 3 = area of a square:'
+        f'What equation do you want to solve for: 1 = Newton second law, 2 = Pythagorean theorem 3 = Area of a square: '
     ))
 
 #Newtons Second Law
@@ -37,8 +37,8 @@ elif what_equation_to_pick == 2:
         possible_variable_solving_for = input(
             f' What would you like to solve for?, a, b, or c : ')
         if possible_variable_solving_for == "a":
-            b = int(input('What is b equal to:'))
-            c = int(input('What is c equal to:'))
+            b = int(input('What is b equal to: '))
+            c = int(input('What is c equal to: '))
             a = math.sqrt(int((c**2) - (b**2)))
             print(f'a = {a}')
             test_variable = False
@@ -46,7 +46,6 @@ elif what_equation_to_pick == 2:
             a = int(input('What is a equal to:'))
             c = int(input('What is c equal to:'))
             b = math.sqrt(int((c**2) - (a**2)))
-            math.sqr(int(b))
             print(f'b = {b}')
             test_variable = False
         elif possible_variable_solving_for == "c":
@@ -80,3 +79,4 @@ elif what_equation_to_pick == 3:
             a = b * h
             print(f'a = {a}')
             test_variable = False
+        
